@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "my summary project",
   "main": "gulpfile.js",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +17,11 @@
   },
   "homepage": "https://github.com/post-witch/post-witch-summ#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.10"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }

@@ -1,8 +1,21 @@
-const {src,dest} = require('gulp');
-const rename = require('gulp-rename');
+const {src, dest, watch} = require('gulp');
+const {series, parallel} = require('gulp')
+const sass = require("gulp-sass")(require('sass'));
 
-function defaultTask(cb) {
-    cb();
+
+function sassToCss() {
+    return src('src/sass/*.scss')
+      .pipe(sass().on('error', sass.logError))
+      .pipe(dest('dist/css/styles.css'));
   }
+
+function html() {
+    return src("src/index.html")
+      .pipe(dest('dist/'))
+}
   
-  exports.default = defaultTask
+
+  exports.default = function() {
+    watch('src/sass/*.scss', sassToCss)
+    watch('src/index.html', html)
+  }
