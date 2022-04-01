@@ -1,0 +1,15 @@
+@import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+    font-family: 'Caviar Dreams Family';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/src/fonts/caviar-dreams.woff2') format('woff2');
+    font-display: swap;
+}
+
+.header-row {
+    font-family: 'Caviar Dreams Family';
+    font-size: 4vh;
+    height: 7.5vh;
+}
