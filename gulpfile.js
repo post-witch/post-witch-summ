@@ -12,14 +12,17 @@ function scssToCss() {
   }
 
 function html() {
-    return src("src/index.html")
+    return src('src/index.html')
       .pipe(dest('dist/'));
 }
   
+function images() {
+    return src('src/img/*.*')
+      .pipe(dest('dist/img'));
+}
 
-
-
-  exports.default = function() {
+exports.default = function() {
     watch('src/sass/*.scss', scssToCss)
     watch('src/index.html', html);
+    watch('src/img/*.*', images)
   }

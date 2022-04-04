@@ -8,12 +8,32 @@
     font-family: 'Caviar Dreams Family';
     font-style: normal;
     font-weight: 400;
-    src: url('/src/fonts/caviar-dreams.woff2') format('woff2');
+    src: local('/src/fonts/caviar-dreams.woff2') format('woff2');
     font-display: swap;
 }
 
-.header-row {
+
+/* Page */
+.page {
+    background-color: rgb(220, 239, 255);
+}
+
+
+/* Header */
+.page-header {
+    background-color: hsl(298, 37%, 61%);
+}
+
+.page-header__logo {
     font-family: 'Caviar Dreams Family';
-    font-size: 4vh;
-    height: 7.5vh;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 1px 1px 2px gray;
+}
+
+
+/* Intro */
+.intro__picture {
+    img {
+        border-radius: 0.5rem;
+    }
 }
