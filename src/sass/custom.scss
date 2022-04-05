@@ -15,8 +15,9 @@
 
 /* Page */
 .page {
-    background-color: rgb(220, 239, 255);
+    background-color: hsl(207, 100%, 93%);
 }
+
 
 
 /* Header */
@@ -32,8 +33,22 @@
 
 
 /* Intro */
+.intro {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.intro__content__header {
+    text-shadow: 1px 1px 2px rgb(107, 107, 107);
+}
+
 .intro__picture {
     img {
-        border-radius: 0.5rem;
+        border-radius: 0.25rem;
     }
+}
+
+
+/* About me */
+.about-me{
+    background-color: white;
 }

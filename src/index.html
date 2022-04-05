@@ -11,14 +11,16 @@
 
     <header class="container text-start text-sm-center page-header">
         <h2 class="fs-2  align-middle page-header__logo">
-            post-witch
+            <strong>post-witch</strong>
         </h2>
     </header>
 
     <section class="container intro">
-        <div class="row gx-4 gy-2 gy-sm-1">
+        <div class="row gx-4 gy-2 py-3 gy-sm-1">
             <picture class="col-12 col-sm-6 intro__picture">
-                <img src="img/intro-image-640w.jpg" width="100%" alt="" srcset="">
+                <source srcset="img/intro-image-medium.jpg" media="(min-width:768px) and (max-width:1023px)">
+                <source srcset="img/intro-image-small.jpg" media="(max-width:575px)">
+                <img src="img/intro-image-large.jpg" width="100%" alt="Данила Елисеев и друзья" srcset="">
             </picture>
             <content class="col-12 col-sm-6">
                 <h2 class="intro__content__header">
@@ -30,5 +32,32 @@
             </content>
         </div>
     </section>
+    
+    <section class="container py-3 about-me">
+        <div class="row gx-4 gy-2 py-3 gy-sm-1">
+            <content class="col-12 col-sm-6 about-me__content">
+                <h2 class="about-me__content__header">
+                    Немного обо мне
+                </h2>
+                <p class="about-me__content__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut a velit eaque autem. Libero, esse saepe itaque est quam minus reprehenderit temporibus optio, aperiam nam doloremque quibusdam unde. Nemo, minus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima in expedita fugiat, ex perspiciatis deserunt fuga et. Eligendi debitis perspiciatis nulla mollitia nam dignissimos atque minima aliquam, officiis enim id.
+                </p>
+                <ul class="about-me__content__list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </content>
+            <picture class="col-12 col-sm-6 order-first order-sm-last about-me__picture">
+                <source srcset="img/about-me-image-medium.jpg" media="(min-width:768px) and (max-width:1023px)">
+                <source srcset="img/about-me-image-small.jpg" media="(max-width:575px)">
+                <img src="img/about-me-image-large.jpg" width="100%" alt="Данила Елисеев и друзья" srcset="">
+            </picture>
+            
+        </div>
+    </section>
+
 </body>
 </html>
