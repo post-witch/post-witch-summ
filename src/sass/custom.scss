@@ -22,7 +22,7 @@
 
 /* Header */
 .page-header {
-    background-color: hsl(298, 37%, 61%);
+    background-color: hsl(295, 100%, 43%);
 }
 
 .page-header__logo {
@@ -37,20 +37,14 @@
     background-color: hsl(0, 0%, 100%);
 }
 
-.intro__picture {
-    img {
-        border-radius: 0.25rem;
-    }
-}
-
 
 /* About me */
 .about-me{
     background-color: white;
 }
 
-.about-me__picture {
-    img {
-        border-radius: 0.25rem;
-    }
+
+/* Skills */ 
+.skills {
+    background-color: white;
 }
