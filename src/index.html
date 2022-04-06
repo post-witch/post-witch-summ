@@ -8,71 +8,82 @@
     <title>Post Witch</title>
 </head>
 <body class="page">
-
     <header class="container text-start text-sm-center page-header">
         <h2 class="fs-2 page-header__logo">
             <strong>post-witch</strong>
         </h2>
     </header>
+    <main>
+        <section class="container intro">
+            <div class="row gx-4 gy-2 p-2 gy-sm-1">
+                <picture class="col-12 col-sm-6 p-3 intro__picture" >
+                    <source srcset="img/intro-image-medium.jpg" media="(min-width:768px) and (max-width:1023px)">
+                    <source srcset="img/intro-image-small.jpg" media="(max-width:575px)">
+                    <img src="img/intro-image-large.jpg" width="100%" alt="Данила Елисеев и друзья" srcset="">
+                </picture>
+                <content class="col-12 col-sm-6">
+                    <h2 class="fs-2 py-2 intro__content__header">
+                        <b>Да, это моё резюме</b>
+                    </h2>
+                    <hr>
+                    <p class="intro__content__text">
+                        Мой небольшой <b>сайт-резюме</b>, в котором я расскажу о себе, 
+                        параллельно запихнув основные техногологии и навыки вёрстки, которые у меня имеются. <br>
+                        Тут будет адаптив на Bootstrap, семантика, адаптив изображений, кастомный шрифт и еще по мелочи<br><br>
+                        Главное чтобы сайт <b>НЕ</b> взорвался на финалке. Если вы это сейчас читаете и остались с конечностями, значит я смог
+                    </p>
+                    <hr>
+                </content>
+            </div>
+        </section>
+        
+        <section class="container about-me">
+            <div class="row gx-4 gy-2 p-2 gy-sm-1">
+                <content class="col-12 col-sm-6 px-3 about-me__content">
+                    <h2 class="fs-2 py-2 about-me__content__header">
+                        <b>Немного обо мне</b>
+                    </h2>
+                    <hr>
+                    <p class="about-me__content__text">
+                        Мне 20 лет, учусь в ВлГУ на мифической специальности УС.
+                        Вечно чем то занимаюсь, ибо скучная жизнь для фанатов пост-панка, а я хочу Жить. 
+                        Мои интересы скачут от программирования до рисования и музыки(могу сыграть на укулеле и даже спеть)
+                        <br><br>
+                        Наверное надо бы для общей картины вынести какие-то черты и софт-скиллы:
+                    </p>
+                    <ul class="about-me__content__list">
+                        <li>Коммуникабельный</li>
+                        <li>На позитиве</li>
+                        <li>Вроде даже не тупой</li>
+                        <li>Обучаемый</li>
+                        <li>У меня круглые очки</li>
+                    </ul>
+                    <hr>
+                </content>
+                <picture class="col-12 col-sm-6 p-3 order-first order-sm-last about-me__picture">
+                
+                    <img src="img/about-me-image-large.jpg" width="100%" alt="Данила поёт">
+                </picture>
+            </div>
+        </section>
 
-    <section class="container intro">
-        <div class="row gx-4 gy-2 py-3 gy-sm-1">
-            <picture class="col-12 col-sm-6 px-3 intro__picture" >
-                <source srcset="img/intro-image-medium.jpg" media="(min-width:768px) and (max-width:1023px)">
-                <source srcset="img/intro-image-small.jpg" media="(max-width:575px)">
-                <img src="img/intro-image-large.jpg" width="100%" alt="Данила Елисеев и друзья" srcset="">
-            </picture>
-            <content class="col-12 col-sm-6">
-                <h2 class="fs-2 py-2 intro__content__header">
-                    <b>Да, это моё резюме</b>
+        <section class="container skills">
+            <content class="row gx-4 gy-2 py-3 gy-sm-1 skills__content">
+                <h2 class="col-12 text-center skills__content__header">
+                    <b>Мои навыки</b>
                 </h2>
                 <hr>
-                <p class="intro__content__text">
-                    Мой небольшой <b>сайт-резюме</b>, в котором я расскажу о себе, 
-                    параллельно запихнув основные техногологии и навыки вёрстки, которые у меня имеются. <br>
-                    Тут будет адаптив на Bootstrap, семантика, адаптив изображений, кастомный шрифт и еще по мелочи<br><br>
-                    Главное чтобы сайт <b>НЕ</b> взорвался на финалке. Если вы это сейчас читаете и остались с конечностями, значит я смог
-                </p>
-            </content>
-        </div>
-    </section>
-    
-    <section class="container about-me">
-        <div class="row gx-4 gy-2 py-3 gy-sm-1">
-            <content class="col-12 col-sm-6 px-3 about-me__content">
-                <h2 class="fs-2 py-2 about-me__content__header">
-                    <b>Немного обо мне</b>
-                </h2>
-                <hr>
-                <p class="about-me__content__text">
-                    Мне 20 лет, учусь в ВлГУ на мифической специальности УС.
-                    Вечно чем то занимаюсь, ибо скучная жизнь для фанатов пост-панка, а я хочу Жить. 
-                    Мои интересы скачут от программирования до рисования и музыки(могу сыграть на укулеле и даже спеть)
-                    <br><br>
-                    Наверное надо бы для общей картины вынести какие-то черты и софт-скиллы:
-                </p>
-                <ul class="about-me__content__list">
-                    <li>Коммуникабельный</li>
-                    <li>На позитиве</li>
-                    <li>Вроде даже не тупой</li>
-                    <li>Обучаемый</li>
-                    <li>У меня круглые очки</li>
-                </ul>
-            </content>
-            <picture class="col-12 col-sm-6 px-3 order-first order-sm-last about-me__picture">
-             
-                <img src="img/about-me-image-large.jpg" width="100%" alt="Данила на микрофоне">
-            </picture>
-        </div>
-    </section>
+                <figure class="skills__content__figure">
 
-    <section class="container skills">
-        <div class="row gx-4 gy-2 py-3 gy-sm-1 skills__content">
-            <h2 class="col-12 text-center skills__content__header">
-                <b>Мои навыки</b>
-            </h2>
-            
-        </div>
-    </section>
+                </figure>
+                <figure class="skills__content__figure">
+
+                </figure>
+                <figure class="skills__content__figure">
+
+                </figure>
+            </content>
+        </section>
+    </main>
 </body>
 </html>

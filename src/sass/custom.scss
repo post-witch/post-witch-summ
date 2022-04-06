@@ -8,7 +8,7 @@
     font-family: 'Caviar Dreams Family';
     font-style: normal;
     font-weight: 400;
-    src: local('/src/fonts/caviar-dreams.woff2') format('woff2');
+    src: local('/fonts/caviar-dreams-font.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -40,7 +40,8 @@
 
 /* About me */
 .about-me{
-    background-color: white;
+    background-color: hsl(0, 0%, 25%);
+    color:hsl(0, 0%, 88%)
 }
 
 

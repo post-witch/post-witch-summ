@@ -21,8 +21,14 @@ function images() {
       .pipe(dest('dist/img'));
 }
 
+function fonts() {
+    return src('src/fonts/*.*')
+      .pipe(dest('dist/fonts'))
+}
+
 exports.default = function() {
-    watch('src/sass/*.scss', scssToCss)
+    watch('src/sass/*.scss', scssToCss);
     watch('src/index.html', html);
-    watch('src/img/*.*', images)
+    watch('src/img/*.*', images);
+    watch('src/fonts/*.*', fonts);
   }
