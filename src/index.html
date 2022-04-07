@@ -21,7 +21,7 @@
                     <source srcset="img/intro-image-small.jpg" media="(max-width:575px)">
                     <img src="img/intro-image-large.jpg" width="100%" alt="Данила Елисеев и друзья" srcset="">
                 </picture>
-                <content class="col-12 col-sm-6">
+                <container class="col-12 col-sm-6">
                     <h2 class="fs-2 py-2 intro__content__header">
                         <b>Да, это моё резюме</b>
                     </h2>
@@ -33,13 +33,13 @@
                         Главное чтобы сайт <b>НЕ</b> взорвался на финалке. Если вы это сейчас читаете и остались с конечностями, значит я смог
                     </p>
                     <hr>
-                </content>
+                </container>
             </div>
         </section>
         
         <section class="container about-me">
             <div class="row gx-4 gy-2 p-4 gy-sm-1">
-                <content class="col-12 col-sm-6 px-3 about-me__content">
+                <container class="col-12 col-sm-6 px-3 about-me__content">
                     <h2 class="fs-2 py-2 about-me__content__header">
                         <b>Немного обо мне</b>
                     </h2>
@@ -60,7 +60,7 @@
                         <li>У меня круглые очки</li>
                     </ul>
                     <hr>
-                </content>
+                </container>
                 <picture class="col-12 col-sm-6 p-3 order-first order-sm-last about-me__picture">
                 
                     <img src="img/about-me-image-large.jpg" width="100%" alt="Данила поёт">
@@ -69,21 +69,26 @@
         </section>
 
         <section class="container skills">
-            <content class="row gx-4 gy-2 py-3 gy-sm-1 skills__content">
+            <container class="row gx-4 gy-2 py-4 gy-sm-1 skills__content">
                 <h2 class="col-12 text-center skills__content__header">
                     <b>Мои навыки</b>
                 </h2>
                 <hr text-align="center">
-                <figure class="skills__content__figure">
 
-                </figure>
-                <figure class="skills__content__figure">
+                    <picture class="col-12 col-sm-4 p-2 p-sm-4 skills__picture">
+                        <img src="img/html-logo.png" width="50%" alt="">
+                    </picture>
 
-                </figure>
-                <figure class="skills__content__figure">
 
-                </figure>
-            </content>
+                    <picture class="col-12 col-sm-4 p-2 p-sm-4 skills__picture">
+                        <img src="img/css-logo.png" width="52.5%" alt="">
+                    </picture>
+
+                    <picture class="col-12 col-sm-4 p-2 p-sm-4 skills__picture">
+                        <img src="img/gulp_logo.png" width="50%" alt="">
+                    </picture>
+
+            </container>
         </section>
     </main>
 </body>

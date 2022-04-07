@@ -1,7 +1,8 @@
 const {src, dest, watch, series, parallel} = require('gulp');
 const sass = require("gulp-sass")(require('sass'));
 const cleanCss = require("gulp-clean-css");
-const rename = require("gulp-rename")
+const rename = require("gulp-rename");
+const htmlmin = require("gulp-htmlmin")
 
 function scssToCss() {
     return src('src/sass/*.scss')
@@ -13,6 +14,7 @@ function scssToCss() {
 
 function html() {
     return src('src/index.html')
+      .pipe(htmlmin({collapseWhitespace:true}))
       .pipe(dest('dist/'));
 }
   
