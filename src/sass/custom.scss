@@ -60,3 +60,27 @@
 .skills__content__item__header {
     color:hsl(0, 0%, 29%)
 }
+
+/* Contacts */
+
+.contacts {
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+#vk-logo {
+    transition: 0.5s;
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    &:focus {
+        transform: scale(1.2);
+    }
+
+    #vk-logo-rect {
+        transition: 0.5s;
+    }
+
+}
+
