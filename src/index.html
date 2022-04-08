@@ -8,20 +8,23 @@
     <title>Post Witch</title>
 </head>
 <body class="page">
+
     <header class="container text-center page-header">
         <h2 class="fs-2 page-header__logo">
             <strong>post-witch</strong>
         </h2>
     </header>
+
     <main>
+
         <section class="container intro">
             <div class="row gx-4 gy-2 p-4 gy-sm-1">
                 <picture class="col-12 col-sm-6 p-3 intro__picture" >
                     <source srcset="img/intro-image-medium.jpg" media="(min-width:768px) and (max-width:1023px)">
                     <source srcset="img/intro-image-small.jpg" media="(max-width:575px)">
-                    <img src="img/intro-image-large.jpg" width="100%" alt="Данила Елисеев и друзья" srcset="">
+                    <img src="img/intro-image-large.jpg" width="100%" alt="Данила Елисеев и друзья">
                 </picture>
-                <container class="col-12 col-sm-6">
+                <section class="col-12 col-sm-6 intro__content">
                     <h2 class="fs-2 py-2 intro__content__header">
                         <b>Да, это моё резюме</b>
                     </h2>
@@ -33,13 +36,13 @@
                         Главное чтобы сайт <b>НЕ</b> взорвался на финалке. Если вы это сейчас читаете и остались с конечностями, значит я смог
                     </p>
                     <hr>
-                </container>
+                </section>
             </div>
         </section>
         
         <section class="container about-me">
             <div class="row gx-4 gy-2 p-4 gy-sm-1">
-                <container class="col-12 col-sm-6 px-3 about-me__content">
+                <section class="col-12 col-sm-6 px-3 about-me__content">
                     <h2 class="fs-2 py-2 about-me__content__header">
                         <b>Немного обо мне</b>
                     </h2>
@@ -60,37 +63,57 @@
                         <li>У меня круглые очки</li>
                     </ul>
                     <hr>
-                </container>
+                </section>
                 <picture class="col-12 col-sm-6 p-3 order-first order-sm-last about-me__picture">
-                
                     <img src="img/about-me-image-large.jpg" width="100%" alt="Данила поёт">
                 </picture>
             </div>
         </section>
 
         <section class="container skills">
-            <container class="row gx-4 gy-2 py-4 gy-sm-1 skills__content">
+            <section class="row gx-4 gy-2 py-4 gy-sm-1 skills__content">
                 <h2 class="col-12 text-center skills__content__header">
                     <b>Мои навыки</b>
                 </h2>
                 <hr text-align="center">
-                <container class="col-12 col-sm-4 p-2 p-sm-4 text-center skills__content__item">
+                <section class="col-12 col-sm-4 p-2 p-sm-4 text-center skills__content__item">
                     <picture class="skills__picture">
-                        <img src="img/html-logo.png" width="50%" alt="">
+                        <img src="img/html-logo.png" width="50%" alt="Логотип HTML">
                     </picture>
-                </container>
-                <container class="col-12 col-sm-4 p-2 p-sm-4 text-center skills__content__item">
+                    <h2 class=" fs-3 py-3 skills__content__item__header">
+                        <b>HTML</b>
+                    </h2>
+                    <p class="fs-5 skills__content__item__text">
+                        HTML это база,<br>надо знать
+                    </p>
+                </section>
+                <section class="col-12 col-sm-4 p-2 p-sm-4 text-center skills__content__item">
                     <picture class="skills__picture">
-                        <img src="img/css-logo.png" width="50%" alt="">
+                        <img src="img/css-logo.png" width="50%" alt="Логотип CSS">
                     </picture>
-                </container>
-                <container class="col-12 col-sm-4 p-2 p-sm-4 text-center skills__content__item">
+                    <h2 class=" fs-3 py-3 skills__content__item__header">
+                        <b>CSS</b>
+                    </h2>
+                    <p class="fs-5 skills__content__item__text">
+                        CSS это красиво,<br>
+                        без него никуда
+                    </p>
+                </section>
+                <section class="col-12 col-sm-4 p-2 p-sm-4 text-center skills__content__item">
                     <picture class="skills__picture">
-                        <img src="img/gulp_logo.png" width="50%" alt="">
+                        <img src="img/gulp_logo.png" width="50%" alt="Логотип Gulp">
                     </picture>
-                </container>
-            </container>
+                    <h2 class=" fs-3 py-3 skills__content__item__header">
+                        <b>Gulp</b>
+                    </h2>
+                    <p class="fs-5 skills__content__item__text">
+                        Лепим народную <s>солянку</s> сборку,<br>
+                        чтобы быстро
+                    </p>
+                </section>
+            </section>
         </section>
+
     </main>
 </body>
 </html>
