@@ -1,10 +1,10 @@
-const {src, dest, watch, series, parallel} = require('gulp');
+const {src, dest, watch} = require('gulp');
 const sass = require("gulp-sass")(require('sass'));
 const cleanCss = require("gulp-clean-css");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin")
 
-function scssToCss() {
+function scss_to_css() {
     return src('src/sass/*.scss')
       .pipe(sass().on('error', sass.logError))
       .pipe(cleanCss({compatibility: 'ie8'}))
@@ -29,7 +29,7 @@ function fonts() {
 }
 
 exports.default = function() {
-    watch('src/sass/*.scss', scssToCss);
+    watch('src/sass/*.scss', scss_to_css);
     watch('src/index.html', html);
     watch('src/img/*.*', images);
     watch('src/fonts/*.*', fonts);
