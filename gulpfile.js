@@ -1,8 +1,12 @@
+
 const {src, dest, watch} = require('gulp');
 const sass = require("gulp-sass")(require('sass'));
 const cleanCss = require("gulp-clean-css");
 const rename = require("gulp-rename");
-const htmlmin = require("gulp-htmlmin")
+const htmlmin = require("gulp-htmlmin");
+const imagemin = require("gulp-imagemin");
+
+
 
 function scss_to_css() {
     return src('src/sass/*.scss')
@@ -20,12 +24,13 @@ function html() {
   
 function images() {
     return src('src/img/*.*')
+      .pipe(imagemin())
       .pipe(dest('dist/img'));
 }
 
 function fonts() {
     return src('src/fonts/*.*')
-      .pipe(dest('dist/fonts'))
+      .pipe(dest('dist/fonts'));
 }
 
 exports.default = function() {
