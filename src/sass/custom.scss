@@ -7,7 +7,8 @@
     font-family: 'Caviar Dreams Family';
     font-style: normal;
     font-weight: 400;
-    src:url('/fonts/caviar-dreams-font.woff2') format('woff2');
+    src:url('/fonts/caviar-dreams-font.woff2') format('woff2'),
+        url('/fonts/CaviarDreams.ttf') format('ttf');
     font-display: swap;
 }
 

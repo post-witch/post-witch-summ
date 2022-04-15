@@ -5,6 +5,7 @@ const cleanCss = require("gulp-clean-css");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
 const browserSync = require('browser-sync').create();
 
 
@@ -22,12 +23,14 @@ function html() {
       .pipe(browserSync.reload({
         stream: true
       }))
-      .pipe(dest('dist/'));
+      .pipe(dest('dist'));
 }
   
 function images() {
     return src('src/img/*.*')
       .pipe(imagemin())
+      .pipe(dest('dist/img'))
+      .pipe(webp())
       .pipe(dest('dist/img'));
 }
 
