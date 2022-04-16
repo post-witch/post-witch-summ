@@ -7,31 +7,31 @@ const htmlmin = require("gulp-htmlmin");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const browserSync = require('browser-sync').create();
-
+const concat = require("gulp-concat");
 
 function scss_to_css() {
-    return src('src/sass/*.scss')
+    return src('src/sass/*/*.scss')
+      .pipe(concat('custom.scss'))
       .pipe(sass().on('error', sass.logError))
-      .pipe(cleanCss({compatibility: 'ie8'}))
-      .pipe(rename('custom.min.css'))
-      .pipe(dest('dist/css'));
+      .pipe(rename('custom.css'))
+      .pipe(dest('src/css'));
   }
 
 function html() {
     return src('src/index.html')
-      .pipe(htmlmin({collapseWhitespace:true}))
+      //.pipe(htmlmin({collapseWhitespace:true}))
       .pipe(browserSync.reload({
         stream: true
       }))
-      .pipe(dest('dist'));
+      .pipe(dest('src'));
 }
   
 function images() {
     return src('src/img/*.*')
       .pipe(imagemin())
-      .pipe(dest('dist/img'))
+      .pipe(dest('src/img'))
       .pipe(webp())
-      .pipe(dest('dist/img'));
+      .pipe(dest('src/img'));
 }
 
 function fonts() {
@@ -39,13 +39,13 @@ function fonts() {
       .pipe(dest('dist/fonts'));
 }
 
-exports.default = function() {
+exports.dev_mode = function() {
     browserSync.init({
       server: {
-        baseDir: 'dist'
+        baseDir: 'src'
       },
     })
-    watch('src/sass/*.scss', scss_to_css);
+    watch('src/sass/*/*.scss', scss_to_css);
     watch('src/index.html', html);
     watch('src/img/*.*', images);
     watch('src/fonts/*.*', fonts);
