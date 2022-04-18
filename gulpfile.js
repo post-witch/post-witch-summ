@@ -1,6 +1,7 @@
 const {src, dest, watch} = require('gulp');
 const sass = require("gulp-sass")(require('sass'));
 const cleanCss = require("gulp-clean-css");
+const autoprefixer = require("gulp-autoprefixer");
 const htmlmin = require("gulp-htmlmin");
 const concat = require("gulp-concat")
 const imagemin = require("gulp-imagemin");
@@ -13,6 +14,9 @@ function scss_to_css() {
         includePaths: ['./node_modules'],
       }).on('error', sass.logError))
       .pipe(concat('custom.min.css'))
+      .pipe(autoprefixer({
+        cascade: false
+      }))
       .pipe(cleanCss({compatibility: 'ie8'}))
       .pipe(browserSync.reload({
         stream: true
