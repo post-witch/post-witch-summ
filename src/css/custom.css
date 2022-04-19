@@ -1,0 +1,61 @@
+/* About me */
+.about-me {
+  background-color: hsl(0deg, 0%, 25%);
+  color: hsl(0deg, 0%, 88%);
+}
+/* Contacts */
+.contacts {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+#vk-logo {
+  transition: 0.5s;
+}
+#vk-logo:hover {
+  transform: scale(1.2);
+}
+#vk-logo:focus {
+  transform: scale(1.2);
+}
+#vk-logo #vk-logo-rect {
+  transition: 0.5s;
+}
+/* Intro */
+.intro {
+  background-color: hsl(0deg, 0%, 100%);
+}
+/* Fonts */
+@font-face {
+  font-family: "Caviar Dreams Family";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/caviar-dreams-font.woff2") format("woff2"), url("../fonts/caviar-dreams.woff") format("woff");
+  font-display: swap;
+}
+/* Page */
+.page {
+  background-color: hsl(207deg, 100%, 93%);
+  font-family: "Caviar Dreams Family";
+}
+/* Header */
+.page__header {
+  background-color: hsl(295deg, 100%, 43%);
+}
+
+.page__header__logo {
+  font-family: "Caviar Dreams Family";
+  color: hsl(0deg, 0%, 100%);
+  text-shadow: 1px 1px 2px gray;
+}
+/* Skills */
+.skills {
+  background-color: white;
+}
+.skills__content__item__header {
+  color: hsl(0deg, 0%, 29%);
+}
+.skills__picture img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
