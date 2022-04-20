@@ -6,8 +6,9 @@ const htmlmin = require("gulp-htmlmin");
 const concat = require("gulp-concat")
 const clean = require("gulp-clean");
 const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
+const avif = require("gulp-avif");
 const browserSync = require('browser-sync').create();
-const squoosh = require("gulp-squoosh");
 
 
 function scss_to_css() {
@@ -42,13 +43,23 @@ function build_html() {
       .pipe(dest('dist'));
 }
 
-function images() {
-    return src('src/img/*.*')
-      .pipe(squoosh({
-        webp:{},
-        avif:{},
+function to_avif() {
+    return src('src/img/*.jpg')
+      .pipe(avif({
+        quality: 60,
       }))
       .pipe(dest('src/img'));
+}
+
+function to_webp() {
+    return src('src/img/*.jpg')
+      .pipe(webp())
+      .pipe(dest('src/img'));
+}
+
+function images() {
+    to_avif();
+    to_webp();
 }
 
 function build_images() {
@@ -69,11 +80,6 @@ function build_fonts() {
       .pipe(dest('dist/fonts'));
 }
 
-function clean_dist() {
-    return src('dist/*', {read: false})
-      .pipe(clean());
-}
-
 exports.dev_mode = function() {
     browserSync.init({
       server: {
@@ -87,7 +93,6 @@ exports.dev_mode = function() {
   }
 
 exports.build = function(done) {
-    clean_dist();
     build_html();
     build_css();
     build_images();
