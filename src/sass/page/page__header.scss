@@ -1,10 +1,10 @@
 /* Header */
 .page__header {
-    background-color: hsl(295, 100%, 43%);
+    background-color: $brand_theme;
 }
 
 .page__header__logo {
-    font-family: 'Caviar Dreams Family';
-    color: hsl(0, 0%, 100%);
+    font-family: $font_main;
+    color: $light_theme;
     text-shadow: 1px 1px 2px gray;
 }

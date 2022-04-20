@@ -1,3 +1,10 @@
+/* Vars */
+$font_main : 'Caviar Dreams Family';
+$light_theme : hsl(0, 0%, 97%);
+$dark_theme : hsl(0, 0%, 25%);
+$brand_theme : hsl(295, 100%, 43%);
+$font_color_light: hsl(0, 0%, 88%);
+
 /* Fonts */
 @font-face {
     font-family: 'Caviar Dreams Family';
@@ -8,9 +15,8 @@
     font-display: swap;
 }
 
-
 /* Page */
 .page {
     background-color: hsl(207, 100%, 93%);
-    font-family: 'Caviar Dreams Family';
+    font-family: $font_main;
 }

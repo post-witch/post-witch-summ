@@ -4,15 +4,15 @@ const cleanCss = require("gulp-clean-css");
 const autoprefixer = require("gulp-autoprefixer");
 const htmlmin = require("gulp-htmlmin");
 const concat = require("gulp-concat")
-const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
-const webp = require("gulp-webp");
 const browserSync = require('browser-sync').create();
+const squoosh = require("gulp-squoosh");
+
 
 function scss_to_css() {
-    return src('src/sass/*/*.scss')
+    return src(['src/sass/page/page.scss', 'src/sass/*/*.scss'])
+      .pipe(concat('custom.scss'))
       .pipe(sass().on('error', sass.logError))
-      .pipe(concat('custom.css'))
       .pipe(browserSync.reload({
         stream: true
       }))
@@ -43,15 +43,16 @@ function build_html() {
 
 function images() {
     return src('src/img/*.*')
-      .pipe(webp())
+      .pipe(squoosh({
+        webp:{},
+        avif:{},
+      }))
       .pipe(dest('src/img'));
 }
 
 function build_images() {
     return src('src/img/*.*')
       .pipe(imagemin())
-      .pipe(dest('dist/img'))
-      .pipe(webp())
       .pipe(dest('dist/img'));
 }
 
