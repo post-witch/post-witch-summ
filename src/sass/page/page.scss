@@ -1,4 +1,5 @@
 $font_main : 'Caviar Dreams Family';
+$font_sec : 'Source Sans Pro';
 $light_theme : hsl(0, 0%, 97%);
 $dark_theme : hsl(0, 0%, 25%);
 $brand_theme : hsl(295, 100%, 43%);
@@ -17,5 +18,5 @@ $font_color_light: hsl(0, 0%, 88%);
 /* Page */
 .page {
     background-color: hsl(207, 100%, 93%);
-    font-family: $font_main;
+    font-family: $font_sec;
 }
