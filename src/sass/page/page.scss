@@ -19,4 +19,13 @@ $font_color_light: hsl(0, 0%, 88%);
 .page {
     background-color: hsl(207, 100%, 93%);
     font-family: $font_sec;
+
+    ul {
+        li {
+            color: $brand_theme;
+            span {
+                color: $dark_theme;
+            }
+        };
+    }
 }

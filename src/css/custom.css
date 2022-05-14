@@ -11,6 +11,12 @@
   background-color: hsl(207deg, 100%, 93%);
   font-family: "Source Sans Pro";
 }
+.page ul li {
+  color: hsl(295deg, 100%, 43%);
+}
+.page ul li span {
+  color: hsl(0deg, 0%, 25%);
+}
 
 /* About me */
 .about-me {
@@ -33,11 +39,6 @@
 }
 #vk-logo #vk-logo-rect {
   transition: 0.5s;
-}
-
-/* Intro */
-.intro {
-  background-color: hsl(0deg, 0%, 97%);
 }
 
 /* Header */
