@@ -23,6 +23,10 @@
   background-color: hsl(0deg, 0%, 97%);
 }
 
+.about-me__contacts {
+  padding: 5em;
+}
+
 /* Contacts */
 .contacts {
   background-color: hsl(0deg, 0%, 97%);
