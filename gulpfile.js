@@ -15,10 +15,10 @@ function scss_to_css() {
     return src(['src/sass/page/page.scss', 'src/sass/*/*.scss'])
       .pipe(concat('custom.scss'))
       .pipe(sass().on('error', sass.logError))
-      .pipe(dest('src/css'))
       .pipe(browserSync.reload({
         stream: true
-      }));
+      }))
+      .pipe(dest('src/css'));
   }
 
 function build_css(){

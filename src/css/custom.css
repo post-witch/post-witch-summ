@@ -23,8 +23,8 @@
   background-color: hsl(0deg, 0%, 97%);
 }
 
-.about-me__contacts {
-  padding: 5em;
+.about-me__contacts a {
+  color: hsl(246deg, 97%, 72%);
 }
 
 /* Contacts */
@@ -45,6 +45,10 @@
   transition: 0.5s;
 }
 
+.knowledges {
+  background-color: hsl(0deg, 0%, 97%);
+}
+
 /* Header */
 .page__header {
   background-color: hsl(295deg, 100%, 43%);
@@ -54,19 +58,4 @@
   font-family: "Caviar Dreams Family";
   color: hsl(0deg, 0%, 97%);
   text-shadow: 1px 1px 2px gray;
-}
-
-/* Skills */
-.skills {
-  background-color: hsl(0deg, 0%, 97%);
-}
-
-.skills__content__item__header {
-  color: hsl(0deg, 0%, 29%);
-}
-
-.skills__picture img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
