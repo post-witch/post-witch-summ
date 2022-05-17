@@ -27,24 +27,6 @@
   color: hsl(246deg, 97%, 72%);
 }
 
-/* Contacts */
-.contacts {
-  background-color: hsl(0deg, 0%, 97%);
-}
-
-#vk-logo {
-  transition: 0.5s;
-}
-#vk-logo:hover {
-  transform: scale(1.2);
-}
-#vk-logo:focus {
-  transform: scale(1.2);
-}
-#vk-logo #vk-logo-rect {
-  transition: 0.5s;
-}
-
 .knowledges {
   background-color: hsl(0deg, 0%, 97%);
 }
